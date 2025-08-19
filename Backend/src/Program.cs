@@ -6,6 +6,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
 builder.Services.AddSingleton<IUsersService,UsersService>();
+builder.Services.AddSingleton<IProductsService,ProductsService>();
 var app = builder.Build();
 
 app.MapControllers();
